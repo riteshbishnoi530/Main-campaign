@@ -1,0 +1,59 @@
+/* ==========font-family============ */
+@font-face {
+    font-family: "thicccboi";
+    src: url(/assets/font/THICCCBOI-Medium.ttf);
+}
+
+.font-thicccboi{
+    font-family: "thicccboi";
+}
+/* ========linear ============ */
+.sky-linear{
+    background: linear-gradient(259.08deg, #50EDFF -5.05%, #48B8DA 63.97%, #3B5998 130.42%);
+
+}
+/* ======slider=======Businesses generate more revenue with Main Campaign======== */
+.slider-container .slick-track{
+    gap: 30px !important;
+    display: flex !important;
+}
+
+.slider-container .slick-dots li.slick-active button:before{
+  color: #3B5998 !important;
+  opacity: 100% !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slider-container .slick-dots li button:before{
+  font-size: 10px !important;
+  color: #FAF9F6 !important;
+  opacity: 100% !important;
+}
+
+/* =============footer===slider================= */
+.slider .slick-next:before{
+  content: url(/assets/image/svg/next-button.svg) !important;
+  position: absolute !important;
+  right: 30px !important;
+  top: 0px !important;
+  transform: translate(0, -11px) !important;
+}
+
+.slider .slick-prev:after{
+  content: url(/assets/image/svg/prev-button.svg) !important;
+  position: absolute !important;
+  left: 30px !important;
+  top: 0px !important;
+  transform: translate(0, -11px) !important;
+}
+
+.slider .slick-track{
+  align-items: center !important;
+  display: flex !important;
+}
+
+.slider .slick-track{
+  gap: 10px !important;
+  display: flex !important;
+}
