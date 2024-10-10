@@ -30,6 +30,11 @@
   color: #FAF9F6 !important;
   opacity: 100% !important;
 }
+@media (max-width:1024px) {
+.slider-container .slick-dots{
+  bottom: 20px !important;
+}  
+}
 
 /* =============footer===slider================= */
 .slider .slick-next:before{
