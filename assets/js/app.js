@@ -10,8 +10,8 @@ const navmenu = () => {
     $(document).ready(function(){
         $('.slider').slick({
             slidesToShow: 7.999,
-            slidesToScroll: 8,
-            infinite: true,
+            slidesToScroll: 1,
+                   infinite: true,
             arrows: true,
             prevArrow: "<button type='button' class='slick-prev'> < </button>",
             nextArrow: "<button type='button' class='slick-next'> > </button>",
@@ -21,21 +21,21 @@ const navmenu = () => {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1,
                     }
                 }
             ]
@@ -48,8 +48,11 @@ const navmenu = () => {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
+      speed:2000,
+      cssEase:'linear',
       centerMode:true,
-      autoplaySpeed: 2000,
+
+      autoplaySpeed: 0,
       dots: true,
       arrows: true,
       responsive: [
@@ -74,3 +77,6 @@ const navmenu = () => {
   });
 
 
+const backTop = document.querySelector(".back-to-top");
+backTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+window.onscroll = () => backTop.style.opacity = window.scrollY > 150 ? 1 : 0
